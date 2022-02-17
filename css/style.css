@@ -1,0 +1,272 @@
+body{background-color: #fff;
+  color: #000;
+  font-size:16px ;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;}
+
+/* ------------------------
+　　全体構造
+--------------------------*/
+.page{
+  line-height: 20px;
+}
+.content{
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+#topics .content,#speakers .content,#faq .content,#contact .content{
+  margin: 0 auto 0 auto;
+}
+
+.entry{
+  position: fixed;
+  bottom: 170px;
+  right: 50px;
+}
+
+
+
+
+/* ------------------------
+　　ヘッダー
+--------------------------*/
+header{
+  background-color: #0096b3;
+  height: 120px;
+
+  margin-bottom: 30px;
+}
+header .inner{
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto;
+}
+h1{
+/* margin: 0 0 0 20px;   */
+}
+header ul{
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  height: 30px;
+margin: 70px 0 0 0;
+}
+header a{
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  line-height: 30px;
+  font-family: 'Lora', serif;  
+}
+
+
+
+
+/* ------------------------
+　　メイン
+--------------------------*/
+.top-image{
+margin-bottom: 50px;
+text-align: center;
+}
+
+.main{
+  width: 660px;
+}
+.main h2{
+  background-color:#ffde05 ;
+  height: 50px;
+  border: 2px solid #003e59;
+  border-radius: 5px;
+  margin-bottom: 60px;
+  color: #003e59;
+}
+
+
+
+/* ------------------------
+　　アサイド
+--------------------------*/
+aside{
+  width: 300px;
+}
+.info h2{
+  font-weight: bold;
+  background-color:#ffde05 ;
+  height: 50px;
+  border: 2px solid #003e59;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  line-height: 50px;
+  font-size: 20px;
+  padding-left:20px ;
+  color: #003e59;
+  font-family: 'Lora', serif;
+}
+
+.info ul{
+  list-style-type: none;
+  padding: 0 20px 0 20px;
+}
+.info li{
+  margin-bottom: 20px;
+  border-bottom: 2px dotted #9a9a9a;
+  padding-bottom: 10px;
+}
+.info time{
+  color: #9a9a9a;
+}
+
+.info a{
+  text-decoration: none;
+  color: #000;
+}
+.info a:hover{
+  color: #9a9a9a;
+}
+
+/* ------------------------
+　　フッター
+--------------------------*/
+footer{
+  height: 180px;
+  background-color: #0096b3;
+}
+.footer-icon ul{
+  list-style-type: none;
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 30px auto;
+}
+.footer-icon li{
+width: 20%;
+margin-top: 20px; 
+text-align: center;
+}
+.footer-icon li+ li {
+  border-left: 1px solid #FFF;
+}
+
+.wrap{
+  text-align: center;
+  color: #fff;
+}
+.wrap a{
+  color: #fff;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+
+
+
+
+/* -------------------
+ home
+------------------- */
+#home .content{
+  margin: 0 auto 100px auto;
+}
+#home .main h3{
+  width:300px ;
+  font-size: 20px;
+  margin-bottom:30px ;
+  border-bottom: 4px solid #ffde05;
+}
+#home .main h2 p{
+  font-weight: bold;
+  line-height: 50px;
+}
+
+#home .main p{ 
+  font-size: 20px;
+  line-height: 30px;
+}
+#home section{
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#home .right{
+margin:0 0 0 20px ;
+}
+#home .main-p{
+  margin-bottom: 30px;
+}
+
+
+
+/* -------------------
+ topics 
+------------------- */
+
+#topics .main h2,#speakers .main h2,#faq .main h2,#contact .main h2{
+  font-family: 'Lora', serif;
+  padding-left:20px ;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+}
+#topics .main h3,#speakers .main h3{
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #003e59;;
+  margin: 10px 0 10px 0;
+}
+#topics .main section{
+  width: 300px;
+  height: 300px;
+  margin-bottom: 100px;
+}
+  
+#topics .main a{
+color: black;
+text-decoration: none;
+display: block;
+position: relative;
+width: 120px;
+padding: 0.5em;
+text-align: center;
+text-decoration: none;
+color: #1B1B1B;
+background: #fff;
+border:1px solid #fff;
+}
+#topics .main a:hover{
+  background: #F2F2F2;
+  cursor: pointer;
+}
+#topics .main .topics-content {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+/* -------------------
+  speakers
+------------------- */
+#speakers .main h2 {
+  font-family: 'Lora', serif;
+  padding-left:20px ;
+}
+#speakers section{
+  width: 170px;
+  height: 270px;
+margin-bottom: 60px;
+}
+#speakers .main .speakers-content{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  padding: 0 30px 0 30px;
+}
+#speakers section {
+  text-align: center;
+}
+#speakers .content{
+  margin-bottom: 60px;
+}
